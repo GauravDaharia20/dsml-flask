@@ -1,0 +1,6 @@
+name: First Test on AWS
+
+on :
+  push:
+    branch:
+      -main
