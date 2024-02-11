@@ -11,7 +11,7 @@ with open('classifier.pkl','rb') as f:
     
 @app.route('/ping',methods=['GET'])
 def ping():
-    return "aise hi mja aara hai likh diye code !!"
+    return {'message':'aise hi mja aara hai likh diye code !!'}
 
 # gender, married, credit_history , applicant_income, loan_amount 
 @app.route('/predict',methods=['POST'])
@@ -56,3 +56,9 @@ def predict():
 # "loan_amount" : "200000",
 # "credit_history":"Cleared Debts" 
 # }
+
+def sum_something(a,b):
+    return a+b
+
+def sub_somthing(a,b):
+    return a-b
